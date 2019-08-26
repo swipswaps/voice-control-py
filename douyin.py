@@ -8,4 +8,6 @@ class Douyin(Control):
 
 
 if __name__ == '__main__':
-    Douyin.execute(VoiceCommand.GO_HOMO)
+    # Douyin.execute(VoiceCommand.SCROLL_TO_BOTTOM)
+    # Douyin.execute(VoiceCommand.repeat_times(2))
+    Douyin.execute(VoiceCommand.tap('one'))
