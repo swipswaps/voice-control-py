@@ -1,4 +1,4 @@
-from core import Control, Voice
+from voice_control.core import Control, VoiceCommand
 
 
 class WeChat(Control):
@@ -8,4 +8,4 @@ class WeChat(Control):
 
 
 if __name__ == '__main__':
-    WeChat.execute(Voice.GO_HOMO)
+    WeChat.execute(VoiceCommand.GO_HOMO)

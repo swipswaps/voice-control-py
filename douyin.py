@@ -1,4 +1,4 @@
-from core import Control, Voice
+from voice_control.core import Control, VoiceCommand
 
 
 class Douyin(Control):
@@ -8,4 +8,4 @@ class Douyin(Control):
 
 
 if __name__ == '__main__':
-    Douyin.execute(Voice.GO_HOMO)
+    Douyin.execute(VoiceCommand.GO_HOMO)

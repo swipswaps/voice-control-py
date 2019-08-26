@@ -1,13 +1,21 @@
 import os
 
 
-class Voice:
+class VoiceCommand:
     """
     关于手势: https://www.jianshu.com/p/b887af45d5de
     """
     # 基础导航
     GO_HOMO = 'Go Home'
     GO_BACK = 'Go Back'
+
+    SHOW_COMMANDS = 'Show commands'
+
+    GO_TO_SLEEP = 'GO to sleep'
+    WAKE_UP = 'Wake up'
+
+    START_RECORDING_COMMANDS = 'Start recording commands'
+    STOP_RECORDING_COMMANDS = 'Stop recording commands'
 
     # 叠层
     SHOW_NUMBERS = 'Show numbers'
@@ -34,6 +42,11 @@ class Voice:
 
     TWO_FINGER_TAP = 'Two finger tap'
 
+    # 设备
+    TURN_DOWN_VOLUME = 'Turn down volume'
+    TURN_UP_VOLUME = 'Turn up volume'
+    TAKE_SCREENSHOT = 'Take screenshot'
+
     @classmethod
     def tap(cls, item_name) -> str:
         return f'Tap {item_name}'
@@ -54,6 +67,5 @@ class Control:
 
 
 if __name__ == "__main__":
-    Control.execute(Voice.tap('hello'))
-    Control.execute(Voice.SCROLL_DOWN)
-
+    Control.execute(VoiceCommand.tap('hello'))
+    Control.execute(VoiceCommand.SCROLL_DOWN)
